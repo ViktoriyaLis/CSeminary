@@ -3,7 +3,7 @@
 Console.Clear();
 
 Console.WriteLine ("Введите число");
-int number = int.Parse(Console.ReadLine()); 
+int number = int.Parse(Console.ReadLine()!); 
 if (number == 1)
 {
     Console.WriteLine("Понедельник");
