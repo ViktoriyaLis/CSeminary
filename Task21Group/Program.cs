@@ -17,5 +17,5 @@ int userAy = getUserValue("Введите Y");
 int userBx = getUserValue("Введите X");
 int userBy = getUserValue("Введите Y");
 
-double Distanse = getDistaseCoordinat(userAx,userAy,userBx,userBy);
-Console.WriteLine(Distanse);
+double distanse = getDistaseCoordinat(userAx,userAy,userBx,userBy);
+Console.WriteLine($"Расстояние = {Math.Round(distanse,2)}");
