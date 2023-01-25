@@ -8,12 +8,15 @@ int getUserValue (string message)
     int result = int.Parse(Console.ReadLine()!);
     return result;
 }
-
-int N = int.Parse(Console.ReadLine()!);
-int i = 1;
-while (i<=N)
+void PrintResult(int number)
 {
-      
+    int N = int.Parse(Console.ReadLine()!);
+    int i = 1;
+    while (i<=N)
+    {
     Console.Write(Math.Pow(i,2) + ",");
     i++;
+    }
 }
+int number = getUserValue("Введите число");
+PrintResult(number);
