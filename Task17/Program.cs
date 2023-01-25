@@ -3,7 +3,7 @@
 int getUserValue (string message)
 {
     Console.WriteLine(message);
-    int result = int.Parse(Console.ReadLine());
+    int result = int.Parse(Console.ReadLine()!);
     return result;
 }
 int getQuarterNumber(int x, int y)
