@@ -7,7 +7,7 @@ int GetNumberFromRange(int start, int end)
 }
 int GetMaxDigit(int number)
 {
-    int max = number % 10;    // последнее число как макс
+    int max = number % 10;    // последнее число в цифре как макс
     int digit2 = number / 10;
     
     if (max < digit2)
