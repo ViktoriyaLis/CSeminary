@@ -45,16 +45,16 @@ void printArray(int [,] array)
 
 int [,] swapRows(int [,] array, int row1, int row2)
 {
-    for (int i =0; i<array.GetLength(0);i++)
+    for (int i =0; i<array.GetLength(1);i++)
     {
-        int temp = array[i,row1];
-        array[i,row1] = array[i,row2];
-        array[i,row2] = temp;
+        int temp = array[row1,i];
+        array[row1,i] = array[row2,i];
+        array[row2,i] = temp;
     }
     return array;
 }
 
 int[,]array = get2DArray(5,3,-10,100);
 printArray(array);
-int[,] swappedArray = swapRows(array,0,array.GetLength(1) - 1);
+int[,] swappedArray = swapRows(array,0,array.GetLength(0) - 1);
 printArray(swappedArray);
